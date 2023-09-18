@@ -1,5 +1,6 @@
 .navbar {
     width: 100%;
+    height: 110px;
     background-color: #171717;
     display: flex;
     justify-content: space-between;
@@ -67,7 +68,7 @@
 .hamburger__menu {
     width: 30px;
     height: 30px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -80,3 +81,22 @@
     background: #f4f4f4;
 }
 
+.hamburger__menu:hover > div {
+    background: #dd219e;
+}
+
+@media (max-width: 960px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .hamburger__menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar__logo h2 {
+        font-size: 1rem;
+    }
+}
